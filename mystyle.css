@@ -1,0 +1,157 @@
+/* Basic styles and resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar styles */
+nav {
+  background-color: #333;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  background-color: #0c8a6a;
+  position: relative;
+}
+
+.logo,
+.item,
+.toggle {
+  padding: 1rem;
+  color: white;
+}
+
+.logo a,
+.item a {
+  display: block;
+}
+
+.toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.submenu {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  background-color: #044b39;
+  padding: 1rem 0;
+}
+
+.subitem a {
+  padding: 0.5rem 1rem;
+  color: white;
+  display: block;
+}
+
+.item:hover > .submenu {
+  display: block;
+}
+
+/* Styling for not button hover */
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: rgb(88, 228, 75);
+}
+
+/* Responsive styles */
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .toggle {
+    display: block;
+  }
+
+  .item,
+  .button {
+    display: none;
+  }
+
+  .menu.active .item,
+  .menu.active .button {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #666;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+    padding: 0;
+  }
+
+  .subitem a {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .toggle {
+    display: none;
+  }
+
+  .item,
+  .button {
+    display: block;
+  }
+
+  .submenu {
+    width: 200px;
+    padding: 1rem 0;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .toggle {
+    display: none;
+  }
+
+  .item,
+  .button {
+    display: block;
+  }
+
+  .submenu {
+    width: 200px;
+    padding: 1rem 0;
+  }
+}
+
+/* additional styles */
+.myimage{
+  margin-left: 10px;
+}
+
+.myimage1 {
+  width: 10%;
+  height: 10%;
+}
+
+
+ol.a {
+  list-style-type: "1";
+}
+
+
+.mylink:hover {
+  background-color: yellow;
+}

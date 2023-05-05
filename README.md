@@ -1,4 +1,3 @@
-
 # COMP2110 Week 09
 
 1.	Understand how design and implementation fit together, what is UML and what are sequence diagrams
@@ -29,13 +28,7 @@ At the same time, take a note in the README.md file in your Github project for W
 
 Website used: [Amazon.com.au](https://www.amazon.com.au/)
 Screenshots of the website on different devices are below:
-
-iPhone
-
 ![Amazon landing page on iPhone](/images/Amazon_iPhone.PNG)
-
-iPad
-
 ![Amazon landing page on iPad](/images/Amazon_iPad.PNG)
 - The website can displayed with different browser sizes and the layout of the page changes depending on the size of the browser.
 - Amazon uses an adaptive layout as the layout of it's page changes depending on the device and the page layout. I tested on my iPhone and iPad and the layout was different from my desktop computer.
